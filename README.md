@@ -10,9 +10,9 @@ This tool combines classic financial methods with cutting-edge Machine Learning 
 
 ## 🔗 View the Live Application!
 
-Click the badge below to access the full multi-page application, hosted for free on Streamlit Community Cloud:
+Click below to access the full multi-page application, hosted for free on Streamlit Community Cloud:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://stock-predictor-pro.streamlit.app/)
+https://stock-predictor-ml-pro.streamlit.app/
 
 ## ✨ Key Features & Technology Stack
 
