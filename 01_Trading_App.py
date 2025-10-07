@@ -17,7 +17,7 @@ st.title("Trading Guide App :bar_chart:")
 
 st.header("We provide the Greatest platform for you to collect all information prior to investing in the stocks.")
 
-st.image(st.image("app.jpeg", caption="Trading App", use_container_width=True))
+st.image(st.image("app.jpeg", caption="Trading App", use_container_width=True), caption="Trading App", use_container_width=True)
 
 st.markdown("##We provide the following services")
 
@@ -32,6 +32,7 @@ st.write("Discover how the Capital Asset Pricing Model (CAPM) calculates the exp
 
 st.markdown("##:four: CAPM Beta")
 st.write("Calculates Beta  and  Expected Return for Individual stocks")
+
 
 
 
