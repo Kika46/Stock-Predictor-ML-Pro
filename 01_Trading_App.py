@@ -6,7 +6,8 @@ import seaborn as sns
 import yfinance as yf
 import streamlit as st
 import datetime as datetime
-import plotly_express as go
+import plotly.graph_objects as go
+import plotly.express as px 
 import pandas_datareader.data as web
 
 
@@ -31,6 +32,7 @@ st.write("Discover how the Capital Asset Pricing Model (CAPM) calculates the exp
 
 st.markdown("##:four: CAPM Beta")
 st.write("Calculates Beta  and  Expected Return for Individual stocks")
+
 
 
 
