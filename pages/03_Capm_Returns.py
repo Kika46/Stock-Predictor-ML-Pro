@@ -9,6 +9,7 @@ import datetime as datetime
 import pandas_datareader.data as web
 import capm_functions
 
+plt.style.use('dark_background')
 
 st.set_page_config(page_title='Capital Asset Pricing model',layout='wide',page_icon= "chart_with_upwards_icon")
 st.title("Capital Asset Pricing model")
