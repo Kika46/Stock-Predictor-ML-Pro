@@ -12,6 +12,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
+plt.style.use('dark_background')
+
 st.set_page_config("Stock Prediction - Linear Regression",layout="wide")
 st.title("📈 Linear Regression Stock Prediction")
 
@@ -82,6 +84,7 @@ plt.title(f"{ticker} Price Prediction using {n_lags}-day Lag Model")
 plt.legend()
 plt.grid(True)
 st.pyplot(plt)
+
 
 
 
