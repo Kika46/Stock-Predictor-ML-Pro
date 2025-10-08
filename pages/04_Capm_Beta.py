@@ -4,7 +4,9 @@ import pandas as pd
 import yfinance as yf
 import seaborn as sns
 import matplotlib.pyplot as plt
-import capm_functions   # keep this file OUTSIDE Pages/
+import capm_functions   
+
+plt.style.use('dark_background')
 
 st.set_page_config(page_title="CAPM Beta", layout="wide")
 st.title("📉 Calculate Beta and Return for Individual Stock")
@@ -48,3 +50,4 @@ try:
 
 except Exception as e:
     st.error(f"⚠️ {e}")
+
