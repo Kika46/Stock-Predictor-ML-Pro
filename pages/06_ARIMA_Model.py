@@ -7,6 +7,8 @@ import streamlit as st
 from datetime import timedelta,datetime
 from statsmodels.tsa.arima.model import ARIMA
 
+plt.style.use('dark_background')
+
 st.set_page_config("Stock Prediction - ARIMA", layout="wide")
 st.title("📈 ARIMA Stock Prediction")
 
@@ -63,3 +65,4 @@ with col2:
     st.plotly_chart(fig, use_container_width=True)
 
     
+
