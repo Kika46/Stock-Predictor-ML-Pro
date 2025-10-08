@@ -13,6 +13,8 @@ from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
+plt.style.use('dark_background')
+
 st.set_page_config("Stock Prediction - Using LSTM", layout="wide")
 st.title("📈 LSTM Stock Price Prediction model")
 
@@ -72,6 +74,7 @@ ax.legend()
 ax.grid(True)
 fig.tight_layout()
 st.pyplot(fig)
+
 
 
 
