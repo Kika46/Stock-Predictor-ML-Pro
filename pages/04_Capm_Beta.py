@@ -11,12 +11,12 @@ plt.style.use('dark_background')
 st.set_page_config(page_title="CAPM Beta", layout="wide")
 st.title("📉 Calculate Beta and Return for Individual Stock")
 
-# --- Inputs ---
+#  Inputs 
 stock = st.selectbox("Choose a stock", ["AAPL", "GOOG", "MSFT", "AMZN", "TSLA"])
 years = st.number_input("Number of years", 1, 10, 3)
 
 try:
-    # --- Dates ---
+    #  Dates 
     end = datetime.date.today()
     start = datetime.date(end.year - years, end.month, end.day)
 
@@ -30,16 +30,15 @@ try:
     # Merge into single DataFrame
     df = stock_data.join(sp500, how="inner").dropna()
 
-    # --- Daily Returns ---
+    #  Daily Returns 
     returns = df.pct_change().dropna()
 
-    # --- CAPM Calculations ---
+    # CAPM Calculations
     beta_df = capm_functions.calculate_beta(returns)
     capm_df = capm_functions.calculate_capm_returns(returns)
 
 
-
-    # --- Regression Plot ---
+    #  Regression Plot 
     st.subheader(f"Regression Plot: {stock} vs Market (^GSPC)")
     plt.figure(figsize=(8,6))
     sns.regplot(x=returns["^GSPC"], y=returns[stock], line_kws={"color":"red"})
@@ -50,4 +49,5 @@ try:
 
 except Exception as e:
     st.error(f"⚠️ {e}")
+
 
