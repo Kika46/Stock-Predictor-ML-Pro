@@ -13,6 +13,8 @@ from ta.trend import MACD
 import pandas_datareader.data as web
 
 
+plt.style.use('dark_background')
+
 st.set_page_config(page_title='Stock Analysis',layout='wide',page_icon= "heavy_dollar_sign")
 
 
@@ -169,6 +171,7 @@ fig.update_layout(height=600, width=900, template="plotly_dark", hovermode="x un
 
 
 st.plotly_chart(fig, use_container_width=True)
+
 
 
 
