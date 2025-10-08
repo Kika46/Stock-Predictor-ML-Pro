@@ -1,2 +1,9 @@
 [runtime]
 python = "3.11"
+
+base="dark" 
+primaryColor="#00A36C" 
+backgroundColor="#1E1E1E" 
+secondaryBackgroundColor="#2D2D2D"
+textColor="#FAFAFA" 
+font="sans serif"
