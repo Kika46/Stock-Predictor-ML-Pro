@@ -10,6 +10,7 @@ import plotly.graph_objects as go
 import plotly.express as px 
 import pandas_datareader.data as web
 
+plt.style.use('dark_background')
 
 st.set_page_config(page_title='Trading App',layout='wide',page_icon= "heavy_dollar_sign")
 
@@ -32,6 +33,7 @@ st.write("Discover how the Capital Asset Pricing Model (CAPM) calculates the exp
 
 st.markdown("##:four: CAPM Beta")
 st.write("Calculates Beta  and  Expected Return for Individual stocks")
+
 
 
 
